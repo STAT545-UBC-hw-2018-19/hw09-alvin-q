@@ -1,20 +1,41 @@
-all: report.html
+all: analysis1 analysis2
 
 clean:
-	rm -f words.txt histogram.tsv histogram.png report.md report.html
+	rm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html bar_firstletter.tsv bar_firstletter.png report_firstletter.md report_firstletter.html
 
-report.html: report.rmd histogram.tsv histogram.png
+words.txt:
+	Rscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = "words.txt", quiet = TRUE)'
+
+# Pipeline related to analysis1 (Length)
+
+clean_analysis1:
+	rm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html
+
+analysis1: report_length.html
+
+report_length.html: report_length.rmd histogram_length.tsv histogram_length.png
 	Rscript -e 'rmarkdown::render("$<")'
 
-histogram.png: histogram.tsv
+histogram_length.png: histogram_length.tsv
 	Rscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("$<")); ggsave("$@")'
 	rm Rplots.pdf
 
-histogram.tsv: histogram.r words.txt
+histogram_length.tsv: histogram_length.r words.txt
 	Rscript $<
 
-words.txt: /usr/share/dict/words
-	cp $< $@
+# Pipeline related to analysis2 (First Letter)
 
-# words.txt:
-#	Rscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = "words.txt", quiet = TRUE)'
+clean_analysis2:
+	rm -f words.txt bar_firstletter.tsv bar_firstletter.png report_firstletter.md report_firstletter.html
+
+analysis2: report_firstletter.html
+
+report_firstletter.html: report_firstletter.rmd bar_firstletter.tsv bar_firstletter.png
+	Rscript -e 'rmarkdown::render("$<")'
+
+bar_firstletter.png: bar_firstletter_plot.r bar_firstletter.tsv
+	Rscript $<
+	rm Rplots.pdf
+	
+bar_firstletter.tsv: bar_firstletter.r words.txt
+	Rscript $<

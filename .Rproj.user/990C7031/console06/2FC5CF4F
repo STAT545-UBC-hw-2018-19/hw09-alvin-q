@@ -1,0 +1,425 @@
+[0m[0K]0;:/c/Users/Alvin/Desktop/STAT 545/Git/hw09-alvin-q[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make c[0K[?25hle[0Kan[0K[?25l
+[0K[?25hrm -f words.txt histogram.tsv histogram.png report.md report.html[0K[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make al[0K[?25hl[0K[?25l
+[0K[?25hRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript histogram.r[0K[?25l
+[0K[?25hRscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("histogram.tsv")); ggsave("histogr[0Ka[?25l
+m.png")'[0K
+[0K[?25hSaving 7 x 7 in image[0K[?25l
+[0K[?25h[?25lrm Rplots.pdf[0K[1G[?25h[?25l
+[0K[?25hRscript -e 'rmarkdown::render("report.rmd")'[0K[?25l
+[0K[?25h[?25l
+[0K
+processing file: report.rmd[0K
+[0K[?25h  |[0K[54G[?25l  |                                                                 |   0%[0K[3G[?25h[?25l  |......................[0K[24G[?25h[?25l  |......................                                           |  33%[0K
+   inline R code fragments[0K
+[0K
+[0K[?25h[?25l  |..............[0K[16G[?25h[?25l  |...........................................                      |  67%[0K
+label: loa[0K[9G[?25h[?25llabel: load-hist-dat (with options)[0K
+List of 1[0K
+ $ include:[0K[?25h logi FALSE[0K[?25l
+[0K
+[0K[?25h[?25l  |...........................[0K[29G[?25h[?25l  |.................................................................| 100%[0K
+   inline R code fragments[0K
+[0K
+[0K
+output file: report.knit.md[0K
+[0K
+[0K[?25h[?25l"C:/Progra[0K[9G[?25h[?25l"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS report.utf8.md --to html4 --from markd[0Ko
+wn+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output report.html --smart --ema[0Ki
+l-obfuscatio[0K[11G[?25h[?25ll-obfuscation none --self-contained --standalone --section-divs --template "C:\Users\Alvin\Documents[0K\
+R\win-library\3.5\rmarkdown\rmd\h\default.html"[0K[47G[?25h[?25lR\win-library\3.5\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=1 --variable "[0Kt
+heme:bootstrap" --include-in-header "C:\Users\Alvin\AppData\Local\Temp\RtmpA5NHG4\rmarkdown-str25bc1[0K5
+855[0K[2G[?25h[?25l855c42.html" --mathjax --variable "mathjax-url:https://mathjax.rstudio.com/latest/MathJax.js?config=[0KT
+eX-AMS-MML_HTMLorMML"[0K
+[0K[?25h[?25l
+Output created: report.html[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25hk[0K[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make c[0K[?25hl[0Ke[0Ka[0Kn[0K[?25l
+[0K[?25hrm -f words.txt histogram.tsv histogram.png report.md report.html[0K[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make a[0K[?25hl[0Kl[0K[?25l
+[0K[?25hRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript histogram_length.r[0K[?25l
+[0K[?25hRscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("histogram_length.tsv")); ggsave("[0Kh[?25l
+istogram_length.png")'[0K
+[0K[?25hSaving 7 x 7 in image[0K[?25l
+[0K[?25hrm Rplots.pdf[0K[?25l
+[0K[?25hRscript -e 'rmarkdown::render("report_length.rmd")'[0K[?25l
+[0K[?25h[?25l
+[0K
+processing file: report_length.rmd[0K
+  |[0K[2G[?25h[?25l  |......................                                           |  3[0K[72G[?25h[?25l  |......................                                           |  33%[0K
+   inline R code fragments[0K
+[0K
+  |...........................................                      |  67%[0K
+[0K[?25hlabel: load-hist-dat (with options)[0K[?25l
+List of 1[0K
+ $ include: logi FALSE[0K
+[0K
+[0K[?25h  |[0K[69G[?25l  |.................................................................| 100%[0K
+   inline R code fragments[0K
+[0K
+[0K
+output file: report_length.knit.md[0K
+[0K
+[0K[?25h"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS report_length.utf8.md --to html4 --fro[0Km[?25l
+ markdo[0K[6G[?25h[?25l markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output report_length.html[0K
+--smart --email-obfuscation none --self-contained --standalone --section-divs --template "C:\Users\A[0Kl[101G[?25h[?25l
+vin\Documents\R\win-library\3.5\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=[0K1
+ --variable "theme:bootstrap" --include-in-header "C:\Users\Alvin\AppData\Local\Temp\RtmpuSeTIy\rmar[0Kk
+down-str1a0446952e8c[0K[19G[?25h[?25ldown-str1a0446952e8c.html" --mathjax --variable "mathjax-url:https://mathjax.rstudio.com/latest/Math[0KJ
+ax.js?config=TeX-AMS-MML_HTMLorMML"[0K
+[0K[?25h[?25l
+Output created: report_length.html[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ r[0K[?25hm[0K[?25l$ r[0K[?25h[?25l$[0K[4G[?25h[3G[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make r[0K[?25he[0Km[0K[?25lo[0K[11G[?25h[12G[?25l$ make rem[0K[?25h[?25l$ make re[0K[?25h[?25l$ make r[0K[?25h[?25l$ make[0K[8G[?25h[7G[?25l$ mak[0K[?25h[?25l$ ma[0K[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make c[0K[?25hl[0Kea[0Kn[0K[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html[0K[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make a[0K[?25hn[0Ka[0Kl[0Ks[0Ky[0Ks[0K[?25l$ make analsy[0K[?25h[?25l$ make anals[0K[?25h[?25l$ make anal[0K[?25hy[0Ks[0Ki[0Ks[0K[17G[?25l$ make analysis 1[0K[17G[?25h[18G[?25l$ make analysis[0K[17G[?25h[16G[?25l$ make analysis1[0K[?25h[?25l
+[0K[?25hRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript histogram_length.r[0K[?25l
+[0K[?25hRscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("histogram_length.tsv")); ggsave("[0Kh[?25l
+istogram_length.png")'[0K
+[0K[?25hSaving 7 x 7 in image[0K[?25l
+[0K[?25hrm Rplots.pdf[0K[?25l
+[0K[?25hRscript -e 'rmarkdown::render("report_length.rmd")'[0K[?25l
+[0K[?25h[?25l
+[0K
+processing file: report_length.rmd[0K
+  |[0K[2G[?25h[?25l  |......................[0K[65G[?25h[?25l  |......................                                           |  33%[0K
+   inline R code fragments[0K
+[0K
+  |.....................[0K[?25h......................                      |  67%[0K[?25l
+label: load-hist-dat (with options)[0K
+List of 1[0K
+ $ include: logi FALSE[0K
+[0K
+[0K[?25h  |[0K[40G[?25l  |.................................................................| 100%[0K
+   inline R code fragments[0K
+[0K
+[0K
+output file: report_length.knit.md[0K
+[0K
+[0K[?25h"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS report_length.utf8.md --to html4 --fro[0Km[?25l
+ markdown+autolink_bare_uris+ascii_identif[0K[41G[?25h[?25l markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output report_length.html[0K
+--smart --email-obfuscation none --self-contained --standalone --section-divs --template "C:\Users\A[0Kl
+vin\Documents\R\win-library\3.5\rmarkdown\rmd\h\default.html" --no-highlight --vari[0K[?25hable highlightjs=[0K1[?25l
+ --variable "theme:bootstrap" --include-in-header "C:\Users\Alvin\AppData\Local\Temp\RtmpUd2kwm\rmar[0Kk
+down-stra1010774290.html" --mathjax --variable "mathjax-url:https://mathjax.rstudio.com/latest/[0K[94G[?25h[?25ldown-stra1010774290.html" --mathjax --variable "mathjax-url:https://mathjax.rstudio.com/latest/MathJ[0Ka
+x.js?config=TeX-AMS-MML_HTMLorMML"[0K
+[0K[?25h[?25l
+Output created:[0K[15G[?25h[?25lOutput created: report_length.html[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make c[0K[?25hl[0Ke[0Ka[0Kn[0K[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html bar_fi[0Kr[?25l
+stletter.tsv[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make b[0K[?25ha[0Kr[0K_[0Kf[0Ki[0Kr[0Ks[0K[?25lt[0K[16G[?25h[17G[?25l$ make bar_firstl[0K[?25he[0Kt[0Kt[0Ke[0Kr[0K.[0Kp[0Kn[0Kg[0K[?25l
+[0K[?25hRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript bar_firstletter.r[0K[?25l
+[0K[?25h[?25lRscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("bar_firstletter.tsv")); ggsave("b[0Ka[1G[?25h[?25l
+r_firstletter.png")'[0K
+[0K[?25hError in file(file, "rt") : cannot open the connection[0K[?25l
+Calls: qplot -> ggplot -> read.delim -> read.table -> file[0K
+In addition: Warning message:[0K
+In file(file, "rt") :[0K
+  cannot open file 'bar_firstletter.tsv': No such file or directory[0K
+Execution halted[0K
+[0K[?25hmake: *** [Makefile:19: bar_firstletter.png] Error 1[0K[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make bar_firstletter.png[0K[?25h[?25l$ make clean[0K[?25h[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html bar_fi[0Kr[?25l
+stletter.tsv[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make clean[0K[?25h[?25l$ make bar_firstletter.png[0K[?25h[?25l
+[0K[?25hRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript bar_firstletter.r[0K[?25l
+[0K[?25hRscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("bar_firstletter.tsv")); ggsave("b[0Ka[?25l
+r_firstletter.png")'[0K
+[0K[?25h[?25lError in FU[0K[9G[?25h[?25lError in FUN(X[[i]], ...) : object 'Length' not found[0K
+Calls: <Anonymous> ... <Anonymous> -> f -> scales_add_defaults -> lapply -> FUN[0K
+Execution halted[0K
+[0K[?25hmake: *** [Makefile:19: bar_firstletter.png] Error 1[0K[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K[17G[?25h[?25l
+$[0K[3G[?25h[?25l$ make bar_firstletter.png[0K[?25h[?25l$ make clean[0K[?25h[?25l$ make bar_firstletter.png[0K[?25h[?25l$ make clean[0K[?25h[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html bar_fi[0Kr[?25l
+stletter.tsv[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make clean[0K[?25h[?25l$ make bar_firstletter.png[0K[?25h[?25l
+[0K[?25hRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript bar_firstletter.r[0K[?25l
+[0K[?25hRscript -e 'library(ggplot2); qplot(first_letter, Freq, data=read.delim("bar_firstletter.tsv")); ggs[0Ka[?25l
+ve("bar_firstletter.png")'[0K
+[0K[?25hSaving 7 x 7 in image[0K[?25l
+[0K[?25hrm Rplots.pdf[0K[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make bar_firstletter.png[0K[?25h[?25l$ make clean[0K[?25h[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html bar_fi[0Kr[?25l
+stletter.tsv bar_firstletter.png[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make clean[0K[?25h[?25l$ make bar_firstletter.png[0K[?25h[?25l
+[0K[?25hRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript bar_firstletter.r[0K[?25l
+[0K[?25hRscript bar_firstletter_plot.r[0K[?25l
+[0K[?25h-- ?[1mAttaching packages?[22m --------------------------------------------------------- tidyverse 1[0K.[?25l
+2.1 --[0K
+[0K[?25h?[32mv?[39m ?[34mggplot2?[39m 3.0.0     ?[32mv?[39m ?[34mpurrr  ?[39m 0.2.5[0K[?25l
+?[32mv?[39m ?[34mtibble ?[39m 1.4.2     ?[32mv?[39m ?[34mdplyr  ?[39m 0.7.6[0K
+?[32mv?[39m ?[34mtidyr  ?[39m 0.8.1     ?[32mv?[39m ?[34mstringr?[39m 1.3.1[0K
+?[32mv?[3[0K[8G[?25h[?25l?[32mv?[39m ?[34mreadr  ?[39m 1.1.1     ?[32mv?[39m ?[34mforcats?[39m 0.3.0[0K
+[0K[?25h-- ?[1mConflicts?[22m ------------------------------------------------------------ tidyverse_conflic[0Kt[?25l
+s() --[0K
+?[31mx?[39m ?[34mdplyr?[39m::?[32mfilter()?[39m masks ?[34mstats?[39m::filter()[0K
+?[31mx?[39m ?[34mdplyr?[39m::?[32mlag()?[39m    masks ?[34mstats?[39m::lag()[0K
+[0K[?25hSaving 7 x 7 in image[0K[?25l
+[0K[?25h[?25lrm Rplots.pdf[0K[1G[?25h[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ w[0K[?25hh[0Kc[0K[?25l$ wh[0K[?25h[?25l$ w[0K[5G[?25h[4G[?25l$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make c[0K[?25hl[0Ke[0Ka[0Kn[0K[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html \[0K[?25l
+[0K[?25hbar_firstletter.tsv bar_firstletter.png report_firstletter.md report_firstletter.html[0K[?25l
+[0K[?25hmake: bar_firstletter.tsv: Command not found[0K[?25l
+make: *** [Makefile:5: clean] Error 127[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make clean[0K[?25h[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html bar_fi[0Kr[?25l
+stletter.tsv bar_firstletter.png report_firstletter.md report_firstletter.html[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make a[0K[?25hn[0Ka[0Kl[0Ky[0Ks[0Ki[0Ks[0K2[0K[?25l
+[0K[?25h[?25lRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[1G[?25h[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript bar_firstletter.r[0K[?25l
+[0K[?25hRscript bar_firstletter_plot.r[0K[?25l
+[0K[?25h-- ?[1mAttaching packages?[22m --------------------------------------------------------- tidyverse 1[0K.[?25l
+2.1[0K[3G[?25h[?25l2.1 --[0K
+?[32mv?[39m ?[34mggplot2?[39m 3.0.0     ?[32mv?[39m ?[34mpurrr  ?[39m 0.2.5[0K
+?[32mv?[39m ?[34mtibble ?[39m 1.4.2     ?[32mv?[39m ?[34mdplyr  ?[0K[?25h[39m 0.7.6[0K[?25l
+?[32mv?[39m ?[34mtidyr  ?[39m 0.8.1     ?[32mv?[39m ?[34mstringr?[39m 1.3.1[0K
+?[32mv?[39m ?[34mreadr  ?[39m 1.1.1     ?[32mv?[39m ?[34mforcats?[39m 0.3.0[0K
+[0K[?25h[?25l-- ?[1mConflicts?[22m ------------------------------------------------------------ tidyverse_confli[0K[98G[?25h[?25l-- ?[1mConflicts?[22m ------------------------------------------------------------ tidyverse_conflic[0Kt
+s() --[0K
+?[31mx?[39m ?[34mdplyr?[39m::?[32mfilter()?[39m masks ?[34mstats?[39m::filter()[0K
+?[31mx?[39m ?[34mdplyr?[39m::?[32mlag()?[39m    masks ?[34mstats?[39m::lag()[0K
+[0K[?25h[?25lSavi[0K[3G[?25h[?25lSaving 7 x 7 in image[0K
+[0K[?25hrm Rplots.pdf[0K[?25l
+[0K[?25hRscript -e 'rmarkdown::render("report_firstletter.rmd")'[0K[?25l
+[0K[?25h[?25l
+[0K
+processing file: report_firstletter.rmd[0K
+[0K[?25h[?25l  |                                                                 |   0%[0K[63G[?25h[?25l  |.........                                                        |  14%[0K
+   inline R code fragments[0K
+[0K
+  |...................                                              |  29%[0K[73G[?25h[?25l
+label: load data[0K
+[0K[?25h  |............................                                     |  43%[0K[?25l
+  ordinary text without R code[0K
+[0K
+  |[0K[33G[?25h[?25l  |.....................................                            |  57%[0K
+label: unnamed-chunk-1[0K
+[0K[?25h  |..............................................                   |  71%[0K[?25l
+  ordinary text without R code[0K
+[0K
+  |[0K[61G[?25h[?25l  |........................................................         |  86%[0K
+label: unnamed-chunk-2[0K
+[0K[?25h  |.................................................................| 100%[0K[?25l
+   inline R code fragments[0K
+[0K
+[0K[?25h[?25l
+output file: report_firstletter.knit.md[0K
+[0K
+[0K[?25h"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS report_firstletter.utf8.md --to html4 [0K-[?25l
+-from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output report_firstl[0Ke
+tter.html --smart --email-obfuscation none --self-contained --standalone --secti[0K[78G[?25h[?25ltter.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template "[0KC
+:\Users\Alvin\Documents\R\win-library\3.5\rmarkdown\rmd\h\default.html" --no-highlight --variable hi[0Kg
+hlightjs=1 --variable "theme:bootstrap" --include-in-header "C:\Users\Alvin\AppData\Local\Temp\Rtmp4[0Kw
+JjdA\rmark[0K[9G[?25h[?25lJjdA\rmarkdown-str3a806aa33607.html" --mathjax --variable "mathjax-url:https://mathjax.rstudio.com/l[0Ka
+test/MathJax.js?config=TeX-AMS-MML_HTMLorMML"[0K
+[0K[?25h[?25l
+Output created: report_firstletter.html[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make analysis2[0K[3G[?25h[17G[?25l
+[0K[?25hRscript bar_firstletter_plot.r[0K[?25l
+[0K[?25h-- ?[1mAttaching packages?[22m --------------------------------------------------------- tidyverse 1[0K.[?25l
+2.1 --[0K
+?[32mv?[39m ?[34mggplot2?[3[0K[26G[?25h[?25l?[32mv?[39m ?[34mggplot2?[39m 3.0.0     ?[32mv?[39m ?[34mpurrr  ?[39m 0.2.5[0K
+?[32mv?[39m ?[34mtibble ?[39m 1.4.2     ?[32mv?[39m ?[34mdplyr  ?[39m 0.7.6[0K
+?[32mv?[39m ?[34mtidyr  ?[39m 0.8.1     ?[32mv?[39m ?[34mstringr?[39m 1.3.1[0K
+?[32mv?[39m ?[34mreadr  ?[39m 1.1.1     ?[32mv?[39m ?[34mforcats?[[0K[65G[?25h[?25l?[32mv?[39m ?[34mreadr  ?[39m 1.1.1     ?[32mv?[39m ?[34mforcats?[39m 0.3.0[0K
+[0K[?25h-- ?[1mConflicts?[22m ------------------------------------------------------------ tidyverse_conflic[0Kt[?25l
+s() --[0K
+?[31mx?[39m ?[34mdplyr?[39m::?[32mfilter()?[39m masks ?[34mstats?[39m::filter()[0K
+?[31mx?[39m ?[34mdplyr?[39m::?[32mlag()?[39m    masks ?[34mstat[0K[62G[?25h[?25l?[31mx?[39m ?[34mdplyr?[39m::?[32mlag()?[39m    masks ?[34mstats?[39m::lag()[0K
+[0K[?25hSaving 7 x 7 in image[0K[?25l
+[0K[?25hrm Rplots.pdf[0K[?25l
+[0K[?25hRscript -e 'rmarkdown::render("report_firstletter.rmd")'[0K[?25l
+[0K[?25h[?25l
+[0K
+processing file: report_firstletter.rmd[0K
+  |[0K[5G[?25h[?25l  |.........                                                        |[0K[?25h  14%[0K[?25l
+   inline R code fragments[0K
+[0K
+  |...................                                              |  29%[0K
+label: load data[0K
+[0K[?25h[?25l  |[0K[1G[?25h  |............................                                     |  43%[0K[?25l
+  ordinary text without R code[0K
+[0K
+  |.....................................                            |  57%[0K
+label: unnamed-chunk-1[0K
+[0K[?25h  |..............................................                   |  71%[0K[?25l
+  ordinary text without R code[0K
+[0K
+  |........................................................[0K[65G[?25h[?25l  |........................................................         |  86%[0K
+label: unnamed-chunk-2[0K
+  |[0K[34G[?25h[?25l  |.................................................................| 100%[0K
+   inline R code fragments[0K
+[0K
+[0K
+output file: report_firstletter.knit.md[0K
+[0K
+[0K[?25h"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS report_firstletter.utf8.md --to html4 [0K-[?25l
+-from markdow[0K[12G[?25h[?25l-from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output report_firstl[0Ke
+tter.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template "[0KC
+:\Users\Alvin\Documents\R\win-library\3.5\rmarkdown\rmd\h\default.html" --no-highlight --variable hi[0Kg
+hlightjs=1 --variable "theme:bootstrap" --include-in-header "C:\[0K[63G[?25h[?25lhlightjs=1 --variable "theme:bootstrap" --include-in-header "C:\Users\Alvin\AppData\Local\Temp\RtmpM[0KL
+q2HO\rmarkdown-str2a7c434214f8.html" --mathjax --variable "mathjax-url:https://mathjax.rstudio.com/l[0Ka
+test/MathJax.js?config=TeX-AMS-MML_HTMLorMML"[0K
+[0K[?25h[?25l
+Output created: report_firstletter.html[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ l[0K[?25h[?25l$[0K[3G[?25h[?25l$ c[0K[?25hl[0Ke[0Ka[0K[?25l$ cle[0K[?25h[?25l$ cl[0K[?25h[?25l$ c[0K[?25h[?25l$[0K[3G[?25h[?25l$ m[0K[?25ha[0K[?25lk[0K[5G[?25h[6G[?25l$ make[0K[?25h[8G[?25l$ make c[0K[?25hl[0Ke[0Ka[0Kn[0K[14G[?25l$ make clean a[0K[?25hn[0K[?25l$ make clean a[0K[?25h[?25l$ make clean[0K[14G[?25h[13G[?25l$ make clean_[0K[?25ha[0Kn[0Ka[0Kl[0Ky[0Ks[0Ki[0Ks[0K2[0K[?25l
+[0K[?25hrm -f words.txt bar_firstletter.tsv bar_firstletter.png report_firstletter.md report_firstletter.htm[0Kl[?25l
+[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make clean_analysis2[0K[?25h[?25l$ make clean_analysis[0K[?25h1[0K[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html[0K[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make a[0K[?25hl[0Kl[0K[?25l
+[0K[?25hRscript -e 'download.file("http://svnweb.freebsd.org/base/head/share/dict/web2?view=co", destfile = [0K"[?25l
+words.txt", quiet = TRUE)'[0K
+[0K[?25hRscript histogram_length.r[0K[?25l
+[0K[?25hRscript -e 'library(ggplot2); qplot(Length, Freq, data=read.delim("histogram_length.tsv")); ggsave("[0Kh[?25l
+istogram_length.png")'[0K
+[0K[?25hSaving 7 x 7 in image[0K[?25l
+[0K[?25hrm Rplots.pdf[0K[?25l
+[0K[?25hRscript -e 'rmarkdown::render("report_length.rmd")'[0K[?25l
+[0K[?25h[?25l
+[0K
+processing file: report_length.rm[0K[32G[?25h[?25lprocessing file: report_length.rmd[0K
+  |                                                                 |   0%[0K[43G[?25h[?25l  |......................                                           |  33%[0K
+   inline R code fragments[0K
+[0K
+  |...........................................[0K[59G[?25h[?25l  |...........................................                      |  67%[0K
+label: load-hist-dat (with options)[0K
+List of 1[0K
+ $ include: logi FALSE[0K
+[0K
+[0K[?25h[?25l  |..........................[0K[27G[?25h[?25l  |.................................................................| 100%[0K
+   inline R code fragments[0K
+[0K
+[0K
+output file: report_length.knit.md[0K
+[0K
+[0K[?25h[?25l"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS report_length.utf8.md --to html4 --[0K[96G[?25h[?25l"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS report_length.utf8.md --to html4 --fro[0Km
+ markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output report_length.html[0K
+--smart --email-obfuscation none --self-contained --standalone --section-divs --template "C:\Users\A[0Kl
+vin\Documents\R\win-library\3.5\rmarkdown\rmd\h\default.html" --no-highlight --variable highlightjs=[0K1
+ --variable "theme:boot[0K[21G[?25h[?25l --variable "theme:bootstrap" --include-in-header "C:\Users\Alvin\AppData\Local\Temp\RtmpApKSfI\rmar[0Kk
+down-str267c47251017.html" --mathjax --variable "mathjax-url:https://mathjax.rstudio.com/latest/Math[0KJ
+ax.js?config=TeX-AMS[0K[19G[?25h[?25lax.js?config=TeX-AMS-MML_HTMLorMML"[0K
+[0K[?25h[?25l
+Output created: report_length.html[0K
+[0K[?25hRscript bar_firstletter.r[0K[?25l
+[0K[?25hRscript bar_firstletter_plot.r[0K[?25l
+[0K[?25h[?25l-- ?[0K[2G[?25h[?25l-- ?[1mAttaching packages?[22m --------------------------------------------------------- tidyverse 1[0K.
+2.1 --[0K
+?[32mv?[39m ?[34mggplot2?[39m 3.0.0[0K[?25h     ?[32mv?[39m ?[34mpurrr  ?[39m 0.2.5[0K[?25l
+?[32mv?[39m ?[34mtibble ?[39m 1.4.2     ?[32mv?[39m ?[34mdplyr  ?[39m 0.7.6[0K
+?[32mv?[39m ?[34mtidyr  ?[39m 0.8.1     ?[32mv?[39m ?[34mstringr?[39m 1.3.1[0K
+?[32mv?[39m ?[34mreadr  ?[39m 1.1.1     ?[32mv?[39m ?[34mforcats?[39m 0.3.0[0K
+[0K[?25h-- ?[1mConflicts?[22m ------------------------------------------------------------ tidyverse_conflic[0Kt[?25l
+s() --[0K
+?[31mx?[39m ?[34mdplyr?[39m::?[32mfilter()?[39m masks ?[34mstats?[39m::filter()[0K[?25h[?25l
+?[31mx?[39m ?[34mdplyr?[39m::?[32mlag()?[39m    masks ?[34mstats?[39m::lag()[0K
+[0K[?25hSaving 7 x 7 in image[0K[?25l
+[0K[?25hrm Rplots.pdf[0K[?25l
+[0K[?25hRscript -e 'rmarkdown::render("report_firstletter.rmd")'[0K[?25l
+[0K[?25h[?25l
+[0K
+processi[0K[7G[?25h[?25lprocessing file: report_firstletter.rmd[0K
+  |[0K[59G[?25h[?25l  |.........                                                        |  14%[0K
+   inline R code fragments[0K
+[0K
+  |[0K[13G[?25h[?25l  |...................                                              |  29%[0K
+label: load data[0K
+[0K[?25h  |............................                                     |  43%[0K[?25l
+  ordinary text without R code[0K
+[0K
+  |[0K[28G[?25h[?25l  |.....................................                            |  57%[0K
+label: unnamed-chunk-1[0K
+[0K[?25h  |[0K[12G[?25l  |..............................................                   |  71%[0K
+  ordinary text without R code[0K
+[0K
+  |.......................................................[0K[57G[?25h[?25l  |........................................................         |  86%[0K
+label: unnamed-chunk-2[0K
+[0K[?25h  |.................................................................| 100%[0K[?25l
+   inline R code fragments[0K
+[0K
+[0K
+output file: report_fir[0K[22G[?25h[?25loutput file: report_firstletter.knit.md[0K
+[0K
+[0K[?25h[?25l"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K[0K[52G[?25h[?25l"C:/Program Files/RStudio/bin/pandoc/pandoc" +RTS -K512m -RTS report_firstletter.utf8.md --to html4 [0K-
+-from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash --output report_firstl[0Ke
+tter.html --smart --email-obfuscation none --se[0K[46G[?25h[?25ltter.html --smart --email-obfuscation none --self-contained --standalone --section-divs --template "[0KC
+:\Users\Alvin\Documents\R\win-library\3.5\rmarkdown\rmd\h\default.html" --no-highlight --variable hi[0Kg
+hlightjs=1 --variable "theme:bootstrap" --include-in-header "C:\Users\Alvin\AppData\Local\Temp\Rtmpy[0Kg
+UiJF\rmarkdown-str1e94618c7b4e.html"[0K[36G[?25h[?25lUiJF\rmarkdown-str1e94618c7b4e.html" --mathjax --variable "mathjax-url:https://mathjax.rstudio.com/l[0Ka
+test/MathJax.js?config=TeX-AMS-MML_HTMLorMML"[0K
+[0K[?25h[?25l
+Output created: report_firstletter.html[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ c[0K[?25h[?25l$[0K[3G[?25h[?25l$ m[0K[?25ha[0Kk[0Ke[0K[8G[?25l$ make c[0K[?25hl[0Ke[0Ka[0Kn[0K[14G[13G[?25l$ make clean_[0K[?25ha[0Kn[0Ka[0Kl[0Ky[0Ks[0Ki[0Ks[0K1[0K[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html[0K[?25l
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make clean_analysis1[0K[?25h[?25l$ make clean_analysis[0K[23G[?25h[22G[?25l$ make clean_analysis2[0K[?25h[?25l
+[0K[?25hrm -f words.txt bar_firstletter.tsv bar_firstletter.png report_firstletter.md report_firstletter.htm[0Kl[?25l
+[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ make clean_analysis2[0K[?25h[?25l$ make clean_analysis[0K[?25h[?25l$ make clean_analysi[0K[?25h[?25l$ make clean_analys[0K[?25h[?25l$ make clean_analy[0K[?25h[?25l$ make clean_anal[0K[?25h[?25l$ make clean_ana[0K[?25h[?25l$ make clean_an[0K[?25h[?25l$ make clean_a[0K[?25h[?25l$ make clean_[0K[?25h[?25l$ make clean[0K[?25h[?25l
+[0K[?25hrm -f words.txt histogram_length.tsv histogram_length.png report_length.md report_length.html bar_fi[0Kr[?25l
+stletter.tsv bar_firstletter.png report_firstletter.md report_firstletter.html[0K
+[0K[?25h[?25l
+[0;32mAlvin@ALVIN-PC [0;35m [0;33m~/Desktop/STAT 545/Git/hw09-alvin-q[0;36m (master)[0m[0K
+$[0K[1G[?25h[3G
