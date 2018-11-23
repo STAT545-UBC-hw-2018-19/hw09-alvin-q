@@ -2,7 +2,7 @@
 
 For this homework assignment, I have built on this pipeline [here](https://github.com/STAT545-UBC/make-activity).
 
-I've incorporated 2 possible streams of analyses in this pipeline.
+I've incorporated 2 possible streams of analyses in this pipeline. There Makefile is [here](https://github.com/STAT545-UBC-students/hw09-alvin-q/blob/master/Makefile).
 
 `analysis1` was the previously made one. This pipeline allows user to find the length of all the words in the dictionary and create a histogram of their distribution.
 
@@ -12,7 +12,11 @@ You can run `make all` and `make clean` to run both pipelines and remove the out
 
 Alternatively, you can run `make analysis1` and `make clean_analysis1` as well as `make analysis2` and `make clean_analysis2` to run each seperately.
 
-The final output is an html file that is rendered.
+The final output is an html file that is rendered:
+
+* Analysis 1: [report_length.html](https://github.com/STAT545-UBC-students/hw09-alvin-q/blob/master/report_length.html)
+
+* Analysis 2: [report_firstletter.html](https://github.com/STAT545-UBC-students/hw09-alvin-q/blob/master/report_firstletter.html)
 
 # make-activity
 
